@@ -16,7 +16,7 @@ function display(json)
     loader.remove();
     //create Tabulator on DOM element with id "table"
     let table = new Tabulator("#table", {
-        height:720,
+        height: window.innerHeight - 20,
         data:json, //assign data to table
         autoColumns:true,
     });
